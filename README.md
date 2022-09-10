@@ -17,7 +17,7 @@ Docker container codes for NLP preprocessing using spaCy and prediction using Fa
 4. Predict tags by invoking BlazingText endpoint (deployed using Amazon SageMaker)
 5. Store predictions in S3
 
-## Setting up the container
+## Setting up the container (in CLI)
 1. Build image - ```docker build --tag image-name . ```
 2. Running container on local system- ``` docker run image-name -e AWS_ACCESS_KEY_ID=value -e AWS_SECRET_ACCESS_KEY=value -e AWS_DEFAULT_REGION=value```
 
