@@ -7,8 +7,8 @@ Docker container codes for NLP preprocessing using spaCy and prediction using Fa
 * This container was designed to replicate the data processing pipeline needed for good predictions
 
 ## Challenges encountered in model building
-1. The data needed to be cleaned to train a robust model. Used spaCy to perform data cleaning before using it for model training
-2. The quality of model predictions depends on multiple factors. My baseline models did not yield good results. I augmented my model training by using pretrained FastText models available here - [Pretrained FastText Vectors](https://fasttext.cc/docs/en/english-vectors.html). I was able to get an F1 score of 0.96 when I used the pretrained models
+1. The data needed to be cleaned to train a robust model. I used spaCy to perform data cleaning before using it for model training
+2. The quality of model predictions depends on multiple factors. My baseline models did not yield good results. Hence, I augmented my model training by using pretrained FastText models available here - [Pretrained FastText Vectors](https://fasttext.cc/docs/en/english-vectors.html). I was able to achieve an **F1 score of 0.96** when I used the pretrained models
 
 ## Container Process Flow
 1. Connect to S3 bucket
