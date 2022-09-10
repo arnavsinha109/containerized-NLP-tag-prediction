@@ -2,7 +2,7 @@
 Docker container codes for NLP preprocessing using spaCy and prediction using FastText model deployed as a BlazingText endpoint (Amazon SageMaker)
 
 ## Background
-* I created a supervised Text Classification model using [FastText](https://fasttext.cc/) in Python. I wanted to scale and deploy this model on AWS SageMaker to get the predictions for new data
+* I built a supervised Text Classification model using [FastText](https://fasttext.cc/) in Python. I wanted to scale and deploy this model on AWS SageMaker to get predictions for new data
 * When training the model, I used spaCy pretrained pipelines to clean the text. Similarly, the new data would need to be cleaned before being passed to the model
 * This container was designed to replicate the data processing pipeline needed for good predictions
 
