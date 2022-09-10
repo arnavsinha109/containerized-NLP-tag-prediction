@@ -10,7 +10,7 @@ Docker container codes for NLP preprocessing using spaCy and prediction using Fa
 1. The data needed to be cleaned to train a robust model. Used spaCy to perform data cleaning before using it for model training
 2. The quality of model predictions depends on multiple factors. My baseline models did not yield good results. I augmented my model training by using pretrained FastText models available here - [Pretrained FastText Vectors](https://fasttext.cc/docs/en/english-vectors.html)
 
-## Process Flow
+## Container Process Flow
 1. Connect to S3 bucket
 2. Extract data from S3
 3. Process the text data using spaCy pipeline
@@ -27,11 +27,3 @@ Docker container codes for NLP preprocessing using spaCy and prediction using Fa
 3. Steps to deploy FastText model as an endpoint - [Model Deployment Steps](https://sagemaker-examples.readthedocs.io/en/latest/introduction_to_amazon_algorithms/blazingtext_hosting_pretrained_fasttext/blazingtext_hosting_pretrained_fasttext.html)
 4. Steps to deploy container using Amazon ECS and Fargate - [Container Deployment Steps](https://towardsdatascience.com/deploying-a-docker-container-with-ecs-and-fargate-7b0cbc9cd608)
 5. The trained spaCy pipeline in the pre-compile-lib-dependency folder can be found here - [spaCy Pipeline Link](https://github.com/explosion/spacy-models/releases/tag/en_core_web_sm-3.4.0)
-
-## References
-* @inproceedings{mikolov2018advances,
-  title={Advances in Pre-Training Distributed Word Representations},
-  author={Mikolov, Tomas and Grave, Edouard and Bojanowski, Piotr and Puhrsch, Christian and Joulin, Armand},
-  booktitle={Proceedings of the International Conference on Language Resources and Evaluation (LREC 2018)},
-  year={2018}
-}
